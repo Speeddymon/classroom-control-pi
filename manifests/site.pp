@@ -33,5 +33,5 @@ node default {
 }
 
 node speeddymon.puppetlabs.vm {
-  notify { "This will only be enforced on the Linux container.": } 
+  #notify { "This will only be enforced on the Linux container.": } 
 }
