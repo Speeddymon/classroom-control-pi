@@ -29,5 +29,9 @@ node default {
   # example code for the classroom
   include examples::puppetize
   
-  notify { "This is the default message from the production environment": }
+  notify { "Hello world! I am ${::fqdn}": }
+}
+
+node speeddymon.puppetlabs.vm {
+  #notify { "This will only be enforced on the Linux container.": } 
 }
